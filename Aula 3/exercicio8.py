@@ -22,6 +22,20 @@ litros = area_total / 3
 print(f"Quantidade de litros necessários: {litros:.2f}")
 
 latas = (litros / 5)
-print(f"Quantidade de latas: {latas:.2f}")
+print(f"Quantidade de latas: {latas:.0f}")
+
+#verificar custo unitario
+if latas == 1:
+    custo = 50
+if latas == 2:
+    custo = 48
+if latas == 3:
+    custo = 46
+if latas > 3:
+    custo = 45
+
+
+print(f"Preço unitário: R$ {custo:.2f}")
+print(f"Custo total: R$ {latas * custo:.2f}")
 
 
